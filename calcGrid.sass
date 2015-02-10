@@ -1,0 +1,56 @@
+// Variables
+$em: 1.5em
+
+// Mixin
+@mixin m-r
+  margin-right: $em
+@mixin m-r/2
+  margin-right: calc($em / 2)
+@mixin m-l
+  margin-left: $em
+@mixin m-l/2
+  margin-left: calc($em / 2)
+
+// Col Base
+[class*="col-"] section
+  padding: $em
+  background: #ccc
+  float: left
+
+// Col Two
+.col-2 section
+  width: calc(100% / 2 - ($em / 2) )
+  &:nth-of-type(1)
+    @mixin m-r/2
+  &:nth-of-type(2)
+    @include m-l/2
+
+// Col Three
+.col-3 section
+  width: calc(100% / 3 - ($em * 2 / 3) )
+  &:nth-of-type(2)
+    @include m-r
+    @include m-l
+
+// Col Four
+.col-4 section
+  width: calc(100% / 4 - ($em * 3 / 4) )
+  &:nth-of-type(2)
+    @include m-r/2
+    @include m-l
+  &:nth-of-type(3)
+    @include m-r
+    @include m-l/2
+
+// Col Four
+.col-5 section
+  width: calc(100% / 5 - ($em * 4 / 5) )
+  &:nth-of-type(2)
+    @mixin m-r/2
+    @include m-l
+  &:nth-of-type(3)
+    @mixin m-r/2
+    @include m-l/2
+  &:nth-of-type(4)
+    @include m-r
+    @include m-l/2
