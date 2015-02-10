@@ -2,7 +2,7 @@
 
 CSS and Sass provided, not sure if the Sass will work just yet. I haven't used it in a project at this stage. Mixin's may break :-)
 
-This grid focuses heavily on consistent gutters and margins in a responsive environment. Most flexible grids use percentages to the spacing, but these uses a fixed ( relative ) value.
+This grid focuses heavily on consistent gutters and margins in a responsive environment. Most flexible grids use percentages for the spacing, but these use a fixed ( relative ) value.
 
 I would recommend to use the Mobile-First: Base Styles, and insert this code CSS into the document, or add the Sass file in the partial.
 
