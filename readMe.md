@@ -1,6 +1,6 @@
 # Calc Grid
 
-CSS and Sass provided, not sure if the Sass will work just yet. I haven't used it in a project at this stage. Mixin's may break :-)
+CSS and Sass provided, not sure if the Sass will work just yet. I haven't used it in a project at this stage. Mixin's may break
 
 This grid focuses heavily on consistent gutters and margins in a responsive environment. Most flexible grids use percentages for the spacing, but these use a fixed ( relative ) value.
 
